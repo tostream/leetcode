@@ -29,7 +29,6 @@ class Solution:
         r = n-1
         while l <= r:
             m = (l+r) // 2
-            print(f"{m} , {l} - {r}")
             if nums[m] == target:return m
             elif nums[l] <=nums[m]:
                 if target > nums[m] or target < nums[l]:
